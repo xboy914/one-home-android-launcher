@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <queries>
+        <intent><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent>
+        <package android:name="com.android.settings" />
+        <package android:name="com.samsung.android.dialer" />
+        <package android:name="com.samsung.android.messaging" />
+        <package android:name="com.sec.android.app.clockpackage" />
+        <package android:name="com.samsung.android.calendar" />
+        <package android:name="com.sec.android.app.popupcalculator" />
+        <package android:name="com.samsung.android.contacts" />
+        <package android:name="com.sec.android.app.myfiles" />
+        <package android:name="com.samsung.android.app.notes" />
+        <package android:name="com.sec.android.app.music" />
+        <package android:name="com.sec.android.daemonapp" />
+        <package android:name="com.sec.android.app.samsungapps" />
+        <package android:name="com.sec.android.app.voicenote" />
+        <package android:name="com.sec.android.app.camera" />
+        <package android:name="com.sec.android.gallery3d" />
+        <package android:name="com.miui.gallery" />
+        <package android:name="com.google.android.apps.photos" />
+        <package android:name="com.sec.android.app.sbrowser" />
+    </queries>
+    <application android:label="One Home" android:theme="@android:style/Theme.Material.Light.NoActionBar" android:usesCleartextTraffic="false" android:allowBackup="false">
+        <activity android:name=".MainActivity" android:exported="true" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

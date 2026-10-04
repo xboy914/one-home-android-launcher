@@ -1,0 +1,108 @@
+package com.example.demolauncher.ui.localization
+
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.compositionLocalOf
+import com.example.demolauncher.data.model.AppLanguage
+
+val LocalAppLanguage = compositionLocalOf { AppLanguage.ENGLISH }
+
+private val persian = mapOf(
+    // Mock applications
+    "Phone" to "تلفن", "Messages" to "پیام‌ها", "Camera" to "دوربین",
+    "Gallery" to "گالری", "Settings" to "تنظیمات", "Clock" to "ساعت",
+    "Calendar" to "تقویم", "Calculator" to "ماشین‌حساب", "Contacts" to "مخاطبین",
+    "Files" to "فایل‌ها", "Notes" to "یادداشت‌ها", "Internet" to "اینترنت",
+    "Music" to "موسیقی", "Weather" to "آب‌وهوا", "Store" to "فروشگاه",
+    "Recorder" to "ضبط‌صدا", "Apps" to "برنامه‌ها",
+    "Jenny\'s birthday!" to "تولد جنی است!", "Send a card or gift to celebrate." to "برای جشن گرفتن کارت یا هدیه بفرستید.", "Start" to "شروع", "Seoul" to "سئول", "Ice cream photo" to "عکس بستنی",
+    // Home and drawer
+    "Swipe up for apps" to "برای دیدن برنامه‌ها به بالا بکشید",
+    "Today" to "امروز", "Your space" to "فضای شما",
+    "Your favorite apps, all in one place." to "برنامه‌های محبوب شما، همه در یک‌جا.",
+    "More apps" to "برنامه‌های بیشتر", "Your apps at a glance" to "نگاهی به برنامه‌های شما",
+    "All apps" to "همهٔ برنامه‌ها", "Mostly clear" to "عمدتاً صاف",
+    "Search apps" to "جست‌وجوی برنامه‌ها", "Download to get started" to "برای شروع دانلود کنید",
+    // Dialer and call
+    "Enter a number" to "شماره‌ای وارد کنید", "Delete" to "حذف", "Call" to "تماس",
+    "Keypad" to "صفحه‌کلید", "Recents" to "اخیر", "CALL" to "تماس",
+    "Calling..." to "در حال تماس...", "No phone connection" to "بدون اتصال تلفنی",
+    "Hide keypad" to "بستن صفحه‌کلید", "Add call" to "افزودن تماس", "Video" to "ویدیو",
+    "Bluetooth" to "بلوتوث", "Speaker" to "بلندگو", "Mute" to "بی‌صدا",
+    "End call" to "پایان تماس",
+    // Device identifiers and configuration
+    "Device identifiers" to "شناسه‌های دستگاه", "Simulated information" to "اطلاعات شبیه‌سازی‌شده",
+    "OK" to "تأیید", "Device configuration" to "پیکربندی دستگاه",
+    "All values below are simulated and stored locally." to "همهٔ مقادیر زیر شبیه‌سازی شده‌اند و فقط در برنامه ذخیره می‌شوند.",
+    "IMEI 1" to "شناسه IMEI ۱", "IMEI 2" to "شناسه IMEI ۲", "S/N" to "شماره سریال",
+    "Serial Number" to "شماره سریال", "Device Name" to "نام دستگاه", "Model Name" to "نام مدل",
+    "Model Number" to "شماره مدل", "Phone Number" to "شماره تلفن", "Android Version" to "نسخهٔ اندروید",
+    "UI Version" to "نسخهٔ رابط کاربری", "Build Number" to "شماره ساخت", "Storage" to "فضای ذخیره‌سازی",
+    "Security Patch" to "وصلهٔ امنیتی", "Language" to "زبان برنامه", "English" to "انگلیسی", "Persian" to "فارسی",
+    "Save" to "ذخیره", "Reset to defaults" to "بازگردانی پیش‌فرض‌ها",
+    "Reset all simulated device information?" to "همهٔ اطلاعات شبیه‌سازی‌شده بازنشانی شوند؟",
+    "Reset" to "بازنشانی", "Cancel" to "انصراف",
+    "Defaults restored" to "مقادیر پیش‌فرض بازگردانده شد",
+    "Could not reset device information" to "بازنشانی اطلاعات دستگاه انجام نشد",
+    "Device information updated" to "اطلاعات دستگاه ذخیره شد",
+    "Could not save device information" to "ذخیرهٔ اطلاعات دستگاه انجام نشد",
+    "Back" to "بازگشت", "Edit" to "تغییرنام", "Network" to "شبکه",
+    "Status information" to "اطلاعات وضعیت", "Legal information" to "اطلاعات حقوقی",
+    "Software information" to "اطلاعات نرم‌افزار", "Battery information" to "اطلاعات باتری",
+    "Looking for something else?" to "به دنبال چیز دیگری هستید؟", "Contact us" to "تماس با ما",
+    "Sign in to your Galaxy" to "وارد سیستم Galaxy خود شوید", "Find your lost phone" to "گوشی گم‌شده خود را پیدا کنید.",
+    "SIM manager" to "مدیر سیم‌کارت", "Safety and emergency" to "ایمنی و اضطراری",
+    "Accounts and backup" to "حساب‌ها و پشتیبان", "Wallpaper and style" to "تصویر زمینه و سبک",
+    "Lock screen and AOD" to "صفحه قفل و AOD", "Digital Wellbeing and parental controls" to "کنترل والدین و سلامت دیجیتال",
+    "Device care" to "مراقب دستگاه", "User manual" to "راهنمای کاربر", "Remote support" to "مدیریت از راه دور",
+    "Wi-Fi · Bluetooth · SIM manager" to "Wi-Fi · بلوتوث · مدیر سیم‌کارت",
+    "Quick Share · Android Auto" to "Quick Share · Android Auto",
+    "Modes · Routines" to "حالت‌ها · برنامه‌های روزانه",
+    "Sound mode · Ringtone" to "حالت صدا · زنگ تماس",
+    "Status bar · Do not disturb" to "نوار وضعیت · مزاحم نشوید",
+    "Brightness · Eye comfort shield · Navigation bar" to "روشنایی · محافظ راحتی چشم · نوار پیمایش",
+    "Power saving · Charging" to "ذخیره نیرو · شارژ کردن",
+    "Wallpapers · Color palette" to "تصویرزمینه · تخته‌رنگ",
+    "Themes · Wallpapers · Icons" to "طرح‌های پس‌زمینه · تصویرزمینه‌ها · نمادها",
+    "Layout · App icon badges" to "چیدمان · نشان‌های نماد برنامه",
+    "Lock screen · Always On Display" to "قفل صفحه و اطلاعات بیومتریک · Always On Display",
+    "Auto Blocker · Permission usage" to "مسدودکننده خودکار · استفاده از مجوز",
+    "Location requests" to "درخواست‌های مکان",
+    "Medical info · Emergency alerts" to "اطلاعات پزشکی · هشدارهای اضطراری",
+    "Manage accounts · Smart Switch" to "مدیریت حساب‌ها · Smart Switch",
+    "Google services" to "سرویس‌های Google",
+    "Labs · Side button" to "آزمایشی · دکمه جانبی",
+    "Screen time · App timers" to "زمان صفحه نمایش · تایمرهای برنامه",
+    "Storage · Memory · App protection" to "فضای ذخیره‌سازی · حافظه · محافظت از برنامه",
+    "Default apps · App settings" to "برنامه‌های پیش‌فرض · تنظیمات برنامه",
+    "Language and keyboard · Date and time" to "زبان و صفحه کلید · تاریخ و ساعت",
+    "Visibility · Hearing · Interaction" to "بینایی · شنوایی · مهارت حرکتی",
+    "Download and install" to "دانلود و نصب",
+    "Learn more" to "بیشتر بدانید",
+    "Remote support" to "مدیریت از راه دور",
+    "Status · Legal information · Phone name" to "وضعیت · اطلاعات حقوقی · نام تلفن",
+    // Settings and About phone
+    "Make it yours" to "تنظیمات دلخواه شما",
+    "Search settings" to "جست‌وجوی تنظیمات", "About phone" to "دربارهٔ تلفن",
+    "Simulated details" to "اطلاعات شبیه‌سازی‌شده", "Connections" to "اتصالات",
+    "Connected devices" to "دستگاه‌های متصل", "Modes and Routines" to "حالت‌ها و روال‌ها",
+    "Sound and display" to "صدا و نمایشگر", "Sounds and vibration" to "صدا و لرزش",
+    "Notifications" to "اعلان‌ها", "Display" to "نمایشگر", "Wallpaper" to "تصویر زمینه",
+    "Themes" to "پوسته‌ها", "Home screen" to "صفحهٔ اصلی", "Lock screen" to "صفحهٔ قفل",
+    "Privacy" to "حریم خصوصی", "Security and privacy" to "امنیت و حریم خصوصی",
+    "Location" to "مکان", "Accounts" to "حساب‌ها", "Google" to "گوگل",
+    "Your device" to "دستگاه شما", "Advanced features" to "ویژگی‌های پیشرفته",
+    "Digital wellbeing" to "سلامت دیجیتال", "Battery" to "باتری",
+    "General management" to "مدیریت عمومی", "Accessibility" to "دسترس‌پذیری",
+    "Software update" to "به‌روزرسانی نرم‌افزار",
+    "Set as default Home app" to "انتخاب به‌عنوان برنامهٔ صفحهٔ اصلی",
+    "Opens the Android system chooser" to "پنجرهٔ رسمی انتخاب برنامه در اندروید باز می‌شود",
+    "Device name" to "نام دستگاه", "Model name" to "نام مدل", "Model number" to "شماره مدل",
+    "Serial number" to "شماره سریال", "Phone number" to "شماره تلفن",
+    "Android version" to "نسخهٔ اندروید", "UI version" to "نسخهٔ رابط کاربری",
+    "Build number" to "شماره ساخت", "Security patch level" to "سطح وصلهٔ امنیتی",
+)
+
+@Composable
+fun tr(english: String): String = if (LocalAppLanguage.current == AppLanguage.PERSIAN) persian[english] ?: english else english
+
+fun translate(english: String, language: AppLanguage): String = if (language == AppLanguage.PERSIAN) persian[english] ?: english else english
